@@ -1,0 +1,59 @@
+<style>
+	.header_container {
+		background-color: #dd4b4c;
+		width: 100%;
+		right: 0;
+		left: 0;
+		position: fixed;
+		z-index: 9999;
+		height: 71px;
+		top:0;
+		color:#fff;
+}
+	.header_wrapper{
+		
+		width: 100%;
+		max-width: 948px;	
+		margin-right:auto;
+		margin-left: auto;
+	}
+	.no-m-or-p{		
+		padding: 0;
+	}
+	.nav_links{	
+		color:white;
+	}
+	.links_wrapper li{
+		display: inline-block;
+	
+	}
+
+</style>
+
+
+<div class="header_container">
+	<div class="block-group header_wrapper">
+		<div class="block span_4_of_12">
+			<h1 class="no-m-or-p">Rondry</h1>
+			
+		</div>
+		<div class="block span_8_of_12" style="text-align:right;display:inline-block;">
+			<ul class="links_wrapper">
+				<li class"nav_links"><%= link_to "Home", "/"%> </li>
+				<li class="nav_links"><%= link_to "About", "pages#about" %> </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div style="clear:both;"></div>
+
+	
+
+
+
+
+
+
+
+
+

@@ -11,3 +11,105 @@
  *= require_self
  *= require_tree .
  */
+
+
+
+
+
+/*! PocketGrid 1.1.0
+* Copyright 2013 Arnaud Leray
+* MIT License
+*/
+/* Border-box-sizing */
+.block-group, .block, .block-group:after, .block:after, .block-group:before, .block:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Clearfix */
+.block-group {
+    *zoom: 1;
+}
+.block-group:before, .block-group:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.block-group:after {
+    clear: both;
+}
+
+.block-group {
+    /* ul/li compatibility */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Nested grid */
+.block-group > .block-group {
+    clear: none;
+    float: left;
+    margin: 0 !important;
+}
+
+/* Default block */
+.block {
+    float: left;
+    width: 100%;
+}
+
+/* End of PocketGrid */
+
+/* Grid of 12 */
+.span_12_of_12 {
+    width: 100%;
+}
+
+.span_11_of_12 {
+    width: 91.66%;
+}
+
+.span_10_of_12 {
+    width: 83.33%;
+}
+
+.span_9_of_12 {
+    width: 75%;
+}
+
+.span_8_of_12 {
+    width: 66.67%;
+}
+
+.span_7_of_12 {
+    width: 58.33%;
+}
+
+.span_6_of_12 {
+    width: 50%;
+}
+
+.span_5_of_12 {
+    width: 41.66%;
+}
+
+.span_4_of_12 {
+    width: 33.33%;
+}
+
+.span_3_of_12 {
+    width: 25%;
+}
+
+.span_2_of_12 {
+    width: 16.66%;
+}
+
+.span_1_of_12 {
+    width: 8.33%;
+}
+/* End of Grid of 12 */
+
+

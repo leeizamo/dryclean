@@ -1,51 +1,52 @@
 <style>
 	.header_container {
 		background-color: #dd4b4c;
-		width: 100%;
+		/*width: 100%;
 		right: 0;
 		left: 0;
 		position: fixed;
 		z-index: 9999;
 		height: 71px;
-		top:0;
+		top:0;*/
 		color:#fff;
 }
-	.header_wrapper{
-		
-		width: 100%;
-		max-width: 948px;	
-		margin-right:auto;
-		margin-left: auto;
-	}
-	.no-m-or-p{		
-		padding: 0;
-	}
-	.nav_links{	
-		color:white;
-	}
-	.links_wrapper li{
-		display: inline-block;
-	
-	}
+.navbar-brand{
+	color: white;
+}
+
 
 </style>
 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Rondry</a>
+    </div>
 
-<div class="header_container">
-	<div class="block-group header_wrapper">
-		<div class="block span_4_of_12">
-			<h1 class="no-m-or-p">Rondry</h1>
-			
-		</div>
-		<div class="block span_8_of_12" style="text-align:right;display:inline-block;">
-			<ul class="links_wrapper">
-				<li class"nav_links"><%= link_to "Home", "/"%> </li>
-				<li class="nav_links"><%= link_to "About", "pages#about" %> </li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div style="clear:both;"></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">     
+     
+     
+      <ul class="nav navbar-nav navbar-right">
+
+       	<li class""><%= link_to "Home", "/"%> </li>
+				<li class=""> <%= link_to "About", about_path %> </li>    
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
 
 	
 
